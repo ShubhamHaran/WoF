@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            The Wheel of Fortune
+        </title>
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- As a heading -->
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand mx-auto">The Wheel of Fortune</span>
+    </div>
+  </nav>
+  <div class="container-fluid-content">
+      <div class="row justify-content-md-center">
+      <h2>Welcome to the wheel of fortune!</h2>
+    </div>
+    <p>Make your d-day less stressful by using the WoF incase you're recording a reaction video of your results/are on a video call with your friends or family. </p>
+      <p> Enter the list of colleges/universities you've applied for and spin your wheel of fortune. Do not worry, the selection order is randomised. </p>
+          <h4>All the best for your results!</h4>
+      </p>
+      <p>We know that you have a bright future ahead and irrespetive of the results will do very well in life. <3</p>
+  </div>
+      <form class="container" id="college-list">
+          <div class="row justify-content-md-center">
+        <div class="col-sm-auto"><input id="clg" class="form-control me-2" type="search" placeholder="Add college/university" aria-label="Search"/></div>
+        <div class="col-sm-auto"><button onClick="addItemToList(); return false;" class="btn btn-success" type="submit">Add college/university</button></div>
+          </div>
+      </form>
+      <div class="row justify-content-md" id="clglist">
+      <table class="table" id="college-table">
+      </table>
+    </div>
+     <div class="wof">
+        <button id="spin" onClick="rotate()" class="btn btn-danger col-sm-auto"type="submit">Spin</button>
+    <div class="container-spinner" id="spinner">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+        <div class="seven">7</div>
+        <div class="eight">8</div>
+    </div>
+      </div>
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© Concept by:
+          <a href="http://shubhamjain.tk" target="_blank"> Shubham Jain</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+    </body>
+</html>
